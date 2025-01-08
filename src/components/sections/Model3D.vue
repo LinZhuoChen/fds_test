@@ -40,7 +40,7 @@ scale.value = [
         <el-row justify="center">
           <el-col :xs="20" :sm="12" >
             <vue3dLoader
-              :filePath="./model3d/ply/baseline.ply"
+              filePath="./model3d/ply/baseline.ply"
               :cameraPosition="{ x: -8, y: 10, z: -10 }"
               :height="350"
               :enableDamping="true"
@@ -50,7 +50,7 @@ scale.value = [
           </el-col>
           <el-col :xs="20" :sm="12" >
             <vue3dLoader
-              :filePath="./model3d/ply/fds.ply"
+              filePath="./model3d/ply/fds.ply"
               :scale="scale"
               :position="position"
               :rotation="rotation"
