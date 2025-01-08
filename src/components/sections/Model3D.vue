@@ -3,9 +3,7 @@ import { vue3dLoader } from "vue-3d-loader";
 import { ref } from "vue";
 const filePath = ref();
 filePath.value = [
-  "./model3d/fbx/Samba Dancing.fbx",
-  "./model3d/collada/pump/pump.dae",
-  "./model3d/ply/Lucy100k.ply",
+  "./model3d/ply/fds.ply",
 ];
 const position = ref();
 position.value = [
@@ -42,7 +40,7 @@ scale.value = [
         <el-row justify="center">
           <el-col :xs="20" :sm="12" >
             <vue3dLoader
-              filePath="./model3d/collada/stormtrooper/stormtrooper.dae"
+              filePath="./model3d/ply/baseline.ply",
               :cameraPosition="{ x: -8, y: 10, z: -10 }"
               :height="350"
               :enableDamping="true"
@@ -52,7 +50,7 @@ scale.value = [
           </el-col>
           <el-col :xs="20" :sm="12" >
             <vue3dLoader
-              :filePath="filePath"
+              :filePath="./model3d/ply/fds.ply",
               :scale="scale"
               :position="position"
               :rotation="rotation"
